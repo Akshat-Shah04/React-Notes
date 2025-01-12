@@ -1,0 +1,29 @@
+@mixin theme($bg-color:green){
+    background-color: $bg-color;
+    box-shadow:  0 0 0 rgba($bg-color, .5);
+    color: red;
+    font-size: 40px;
+}
+@mixin border($value:20px)
+{
+    border: $value solid red;
+    border-radius: $value;
+}
+
+
+.main{
+    height: 200px;
+    width: 200px;
+    @include theme;
+    @include border;
+}
+
+.main2{
+    height: 200px;
+    width: 200px;
+    @include theme($bg-color:blue);
+    @include border($value:40px);
+    // border-width: ;
+    border: 10px solid;
+    
+}

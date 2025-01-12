@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- object :- multiple value store in single varible store.{} key:-name -->
+    <!-- Envertying object, table,tv,male,female -->
+    <!-- syntax :- 
+    let person = {
+        key:"value"
+    } -->
+
+    <script>
+        let person = {
+            name:"Raj",
+            age:"23",
+            course:"front-end"
+        }
+
+        console.log(person)
+
+        console.log(person.name)
+        console.log(person.age)
+        // document.write(person.course)
+
+        for(let name1 in person)
+        {
+            // key
+            document.write(name1,"=>",person[name1],"<br>")
+        }
+    </script>
+</body>
+</html>

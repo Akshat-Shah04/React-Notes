@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let person = {
+            fullname: function Person(city, location) {
+                return this.name + " " + this.surname;
+            }
+        }
+
+        let peron1 = {
+            name: "rajesh",
+            surname: "patel"
+        }
+
+
+        // bind let object binde as object function
+        let peron = person.fullname.bind(peron1)
+        console.log(peron())
+
+
+    </script>
+</body>
+
+</html>

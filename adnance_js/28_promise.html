@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Promise :- as object :- 
+    type :- 
+    1) pending 
+    2) fullfiled 
+    3) reject -->
+
+    <!-- syntac :- 
+    let obj = new Promise(function(success,reject){
+
+    }) -->
+
+
+    <script>
+
+        let obj = new Promise(function(success,reject){
+            
+
+            if(!success){
+                console.log("this is fullfied value")
+            }
+            else{
+                console.log("this is a reject value")
+            }
+
+        })
+
+        console.log(obj)
+
+    </script>
+</body>
+</html>

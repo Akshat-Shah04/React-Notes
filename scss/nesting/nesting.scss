@@ -1,0 +1,46 @@
+$backgroud : gray;
+$color : aqua;
+
+body{
+    background-color: $backgroud;
+}
+
+.ul{
+    list-style: none;
+    li{
+        a{
+            text-decoration: none;
+            color: $color;
+        }
+    }
+    p{
+        background-color: red;
+        padding: 20px;
+        
+    }
+    h1{
+        color: lightcoral;
+    }
+}
+
+.ul1{
+    list-style: none;
+    li{
+        display: inline-block;
+        background-color: lightgreen;
+        padding: 5px 10px;
+        a{
+            color: darkblue;
+            text-decoration: none;
+        }
+    }
+    p{
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+    div{
+        background-color: rgba(0,0,0,0.6);
+        padding: 40px;
+    }
+}

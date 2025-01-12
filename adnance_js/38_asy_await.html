@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function name(){
+
+        // }
+        // async function sum(){
+        //     console.log("hello this javascript")
+
+        //     let sum = await fetch()
+        //     console.log(sum)
+        // }
+
+
+        function resolve(){
+            return setTimeout(()=>{
+                console.log("resolved")
+            },4000)
+        }
+
+
+        async function show(){
+            console.log("resolved beffore output")
+            console.log("resolved.....")
+            let result = await resolve()
+            console.log(result)
+            console.log("Resolved after output")
+        }
+        show()
+
+
+
+    </script>
+</body>
+</html>

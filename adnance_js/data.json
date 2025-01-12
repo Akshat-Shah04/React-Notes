@@ -1,0 +1,17 @@
+[
+    {
+        "id":1,
+        "name":"Raj",
+        "course":"back-end"
+    },
+    {
+        "id":2,
+        "name":"kuldeep",
+        "course":"MERN-stack"
+    },
+    {
+        "id":3,
+        "name":"priyank",
+        "course":"MERN-stack"
+    }
+]

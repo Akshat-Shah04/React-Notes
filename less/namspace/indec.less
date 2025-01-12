@@ -1,0 +1,36 @@
+#borer()
+{
+    .button{
+        background-color: red;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        &:hover{
+            background-color: lightgreen;
+        }
+    }
+    .button1{
+        background-color: lightgreen;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        &:hover{
+            background-color: red;
+        }
+    }
+    .text{
+        background-color: aqua;
+        color: red;
+    }
+}
+
+.btn{
+    #borer.button();
+}
+.btn2{
+    #borer.button1();
+}
+
+h1{
+    #borer.text();
+}

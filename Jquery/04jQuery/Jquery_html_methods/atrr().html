@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+
+    <img src="/04jQuery/01Intro//StudentTask/Task1.png" alt="Pulpit Rock" width="284" height="213"><br>
+
+    <button>Set the width attribute of the image</button>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("img").attr("width", "500");
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+body {
+  background-color: gray;
+}
+
+.ul {
+  list-style: none;
+}
+.ul li a {
+  text-decoration: none;
+  color: aqua;
+}
+.ul p {
+  background-color: red;
+  padding: 20px;
+}
+.ul h1 {
+  color: lightcoral;
+}
+
+.ul1 {
+  list-style: none;
+}
+.ul1 li {
+  display: inline-block;
+  background-color: lightgreen;
+  padding: 5px 10px;
+}
+.ul1 li a {
+  color: darkblue;
+  text-decoration: none;
+}
+.ul1 p {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.ul1 div {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+}/*# sourceMappingURL=nesting.css.map */

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+            width: 50%;
+            background: linear-gradient(red,blue);
+            margin: 20px;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Heading1</h1>
+
+    <h2 id="h2">headning 2</h2>
+    <script>
+        var h1_tag = document.getElementById("h1")
+        console.log(h1_tag)
+
+        h1_tag.style.color = "red"
+        h1_tag.style.background = "blue" 
+
+        var h2_tag = document.getElementById("h2")
+
+        h2_tag.classList.add("abc")
+    </script>
+</body>
+</html>

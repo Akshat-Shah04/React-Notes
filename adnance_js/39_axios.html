@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+<body>
+    <script>
+        // https://www.npmjs.com/package/axios
+        // fetch('https://660d95e36ddfa2943b34c530.mockapi.io/data',{
+        //     method:"GET"
+        // })
+        // .then((res)=>{
+        //     return res.json()
+        // })
+        // .then((res)=>{
+        //     console.log(res)
+        // })
+
+        // axios.get('')
+
+        // view
+        const fetchdata=async()=>{
+            const res = await axios.get('https://660d95e36ddfa2943b34c530.mockapi.io/data')
+            console.log(res.data)
+            res.data.map((data)=>{
+                console.log(data)
+                document.write(`id :- ${data.id}  ,name:- ${data.name}  , city :- ${data.city} <br>`)
+            })
+        }
+        fetchdata()
+
+
+        let person = {name:"Raj",city:"Ahemadabad",state:"Gujarat",Coruse:"Front-end"}
+
+        const Cretate=async()=>{
+            const res = await axios.post('https://660d95e36ddfa2943b34c530.mockapi.io/data',person)
+            console.log(res.data)
+        }
+        // Cretate()
+
+        // delete
+        const remove=async()=>{
+            const res = await axios.delete(`https://660d95e36ddfa2943b34c530.mockapi.io/data/21`)
+            console.log(res.data)
+        }
+        remove()
+
+
+        // update :- get + post :- put/patch
+
+
+        let perosn1 = {id:"21",name:"Kuldeep",Coruse:"Full-stack",city:"surat"}
+
+        const update =async()=>{
+            const res = await axios.put(`https://660d95e36ddfa2943b34c530.mockapi.io/data/${perosn1.id}`,perosn1)
+            console.log(res.data)
+        }
+        // update()
+
+
+    </script>
+</body>
+</html>

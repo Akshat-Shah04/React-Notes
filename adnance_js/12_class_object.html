@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- class :- memebee function(function) and data memebr(varible) :- class :- blue of object()  -->
+     <!-- syntax :- 
+     class class-nmae{
+        // meber function
+        function name1(){
+            // data memeber
+            let varbale-name = value
+        }
+        function name1(){
+            let varbale-name = value
+        }
+     }
+
+     var raj =new class-nmae
+     raj -->
+
+
+     <script>
+
+        class Bank{
+            
+            x = function Details(pin,blance){
+
+                let atmpin = pin;
+                let Bankblance = blance;
+                let Bankname = "HDFC";
+                let BANKIFSC = 'HDFC1323H'
+
+
+                console.log(atmpin)
+                console.log(Bankblance)
+                console.log(Bankname)
+                console.log(BANKIFSC)
+
+            }
+
+            //widhrow
+            sum = function() {
+               console.log("sum log") 
+               document.write("sum log")
+            }
+
+        }
+
+
+        var raj = new Bank;
+        var nidhi = new Bank;
+        var karmam = new Bank;
+
+        raj.x(123,40000)
+        nidhi.x(234,678678)
+        karmam.sum()
+        karmam.x(23,6767)
+
+
+
+     </script>
+
+
+
+
+</body>
+</html>

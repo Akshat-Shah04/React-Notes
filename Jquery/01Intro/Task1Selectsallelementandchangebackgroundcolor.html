@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+	<!-- Basic syntax is: $(selector).action()
+	A $ sign to define/access jQuery
+	A (selector) to "query (or find)" HTML elements
+	A jQuery action() to be performed on the element(s) -->
+
+		<h1>Welcome to MySite</h1>
+		<p>My name is shubham jaadav</p>
+		<p>I live in Ahmedabad.</p>
+		<p>My brother name is sujal.</p>
+		<p>Who is your favourite:</p>
+		<ul type="square">
+			<li>Test</li>
+			<li>Test</li>
+		</ul>
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function () {
+			$("*").css("background-color",
+				"lightgreen");
+		});
+
+		// $(document).ready(function(){
+		// 	$("h1").css("background-color","lightcoral").css("color","white")
+		// })
+	</script>
+
+</body>
+</html>

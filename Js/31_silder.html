@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 400px;
+            width: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="/img/n1.jpg" height="100%" width="100%" alt="" class="img1">
+        <img src="/img/n2.jpg"  height="100%" width="100%" alt="" class="img1">
+        <img src="/img/n3.jpg"  height="100%" width="100%" alt=" " class="img1">
+        <img src="/img/n4.jpg"  height="100%" width="100%" alt="" class="img1">
+    </div>
+
+    <script>
+        var img1 = document.getElementsByClassName("img1")
+        console.log(img1)
+
+        index = 0
+        function silder()
+        {
+            for(i=0;i<img1.length;i++)
+            {
+                img1[i].style.display = "none"
+            }
+            img1[index].style.display ="block"
+            index++;
+            
+            if(index == 4)
+            {
+                index = 0;
+            }
+            setTimeout("silder()",1000)
+
+        }
+        silder()
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback function</title>
+
+    <style type="text/css">
+        p {
+            background: white;
+            border: 1px green solid;
+            font-size: 30px;
+            padding: 30px;
+            text-align: center;
+            color: green;
+        }
+
+        button {
+            background: orange;
+            border: 1px black dashed;
+            font-size: 15px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            cursor: pointer
+        }
+    </style>
+</head>
+
+<body>
+    <p>kuldeep</p>
+    <button id="b" type="button">
+        Hide it!
+    </button>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js">
+    </script>
+    <script type="text/javascript">
+        // without callback()
+        // $(document).ready(function(){
+        //     $("#b").click(function(){
+        //         $("p").slideToggle(1000)
+        //     })
+
+        //     alert("without callback()")
+        //     // $("#b").text("show")
+        // })
+
+        $(document).ready(function(){
+            $("#b").click(function(){
+                $("p").slideToggle(1000,function(){
+                    alert("with callback()")
+                })
+            })
+
+            
+            // $("#b").text("show")
+        })
+
+        
+        
+    </script>
+
+</body>
+
+</html>

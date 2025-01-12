@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="test" onmouseenter="Changetext()" onmouseleave="changeremove()">Heading 1</h1>
+
+    <script>
+        h1_tag = document.getElementById("test")
+        console.log(h1_tag)
+
+        function Changetext()
+        {
+            h1_tag.innerHTML = "Hello Javasript";
+            h1_tag.style.color = "red"
+        }
+        function changeremove()
+        {
+            h1_tag.innerHTML ="Heading 1";
+            h1_tag.style.color = "blue"
+        }
+    </script>
+</body>
+</html>

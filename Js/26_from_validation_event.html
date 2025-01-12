@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" >
+        <div>
+            Name :- <input type="text" id="nm" onblur="validation(nm,nmerr)" placeholder="Enter your name">
+            <span id="nmerr"></span>
+        </div>
+        <div>
+            Email :- <input type="text" id="em" onblur="validation(em,emerr)" placeholder="Enter your email">
+            <span id="emerr"></span>
+        </div>
+        <div>
+            Mobile :- <input type="text" id="mb" onblur="validation(mb,mberr)" placeholder="Enter your mobile">
+            <span id="mberr"></span>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+
+    <script>
+        function validation(e,SpId)
+        {
+            if(e.value == "")
+            {
+                SpId.innerHTML = "...Required ...!";
+                SpId.style.color = "red";
+                e.style.border = "2px solid red"
+            }
+            else
+            {
+                SpId.innerHTML = "";
+                e.style.border = "2px solid green"
+            }
+        }
+    </script>
+</body>
+</html>

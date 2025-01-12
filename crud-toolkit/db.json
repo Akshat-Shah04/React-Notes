@@ -1,0 +1,36 @@
+{
+    "users": [
+      {
+        "id": "1",
+        "name": "shubham",
+        "email": "shubhamjadav.tops@gmail.com",
+        "gender": "male",
+        "phone": "8775674764",
+        "password": "1234"
+      },
+      {
+        "id": "2",
+        "name": "jigisha",
+        "gender": "Female",
+        "email": "jigisha12.tops@gmail.com",
+        "phone": "8775674764",
+        "password": "12345"
+      },
+      {
+        "id": "3",
+        "name": "sujal",
+        "gender": "male",
+        "email": "sujaljadav.tops@gmail.com",
+        "phone": "8775674764",
+        "password": "12346"
+      },
+      {
+        "id": "64de",
+        "name": "Jadav Shubham Jigneshbhaikh",
+        "email": "jadavshubham5@gmail.com",
+        "phone": "09824024708",
+        "password": "23",
+        "gender": "male"
+      }
+    ]
+  }

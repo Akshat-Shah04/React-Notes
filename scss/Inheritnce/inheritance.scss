@@ -1,0 +1,45 @@
+%border{
+    border: 5px solid red;
+    padding: 20px;
+    color: rebeccapurple;
+}
+
+%felex-prop{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.btn{
+    @extend %border;
+    font-size: 30px;
+    width: 100px;
+}
+
+.btn2{
+    @extend %border;
+    border-color:lightcoral;
+    background-color: blue;
+    color: white;
+    font-size: 40px;
+}
+
+.main{
+    @extend %felex-prop;
+}
+
+.col{
+    width: 25%;
+    border: 2px solid;
+}
+
+.main2{
+    @extend %felex-prop;
+    justify-content: space-between;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
+}

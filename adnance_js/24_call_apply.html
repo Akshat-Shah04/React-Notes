@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let person = {
+        fullname:function Person(city,location){
+            return this.name + " " + this.surname +" " + city + " " + location;
+        }
+       }
+
+       let peron1 = {
+        name : "rajesh",
+        surname : "patel"
+       }
+
+       let peron2 ={
+        name:"arun",
+        surname:"parmar"
+       }
+
+
+    //    call :- single , pera 
+    //    apply :- array method
+    //    bind :- object 
+
+       // call method single object 
+       console.log(person.fullname.call(peron1,"surat","india"))
+       // apply mehtod multiple array    
+       console.log(person.fullname.apply(peron2,['bharuch','india']))
+
+    </script>
+</body>
+</html>

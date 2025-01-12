@@ -1,0 +1,7 @@
+@use 'text';
+
+
+.div{
+    background-color: text.$bg-color;
+    color: text.$color;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class abc{
+            constructor(a,b){
+                this.a = a
+                this.b = b
+            }
+
+            sum = function(){
+                document.write(`this sum => ${this.a + this.b}`)
+            }
+            sub = function(){
+                document.write(`this sub => ${this.a - this.b}`)
+            }
+            mul = function(){
+                document.write(`this mul => ${this.a * this.b}`)
+            }
+
+        }
+
+        var obj = new abc(30,20)
+        obj.sum()
+        obj.mul()
+        obj.sub()
+
+    </script>
+</body>
+</html>

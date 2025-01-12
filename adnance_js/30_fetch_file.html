@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Fetch :- data store user file , json  -->
+
+    <!-- fetch :- promise :- object  -->
+     <!-- GET,post,delete,put/patch :- get/daulas  -->
+    <!-- sytax :
+    fetch('url',{
+
+        method:"GET"
+    })
+    .then((res)=>{
+        covert file to object/array
+    })
+    .then(()=>{
+        ...code
+    }) -->
+
+    <h1 id="h1"></h1>
+
+    <script>
+        fetch('demo.txt',{
+            method:"GET"
+        })
+        .then((asdas)=>{
+            // convert file to object/string
+            return asdas.text()
+        })
+        .then((res)=>{
+            console.log(res)
+            document.getElementById("h1").innerHTML = res
+        })
+
+    </script>
+
+</body>
+</html>

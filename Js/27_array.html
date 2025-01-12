@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- array :-  none - primitive :- multiple :- primitive datatype -->
+    <!-- array :-  multiple value store in single varible .[] , index:-start 0 -->
+    <!-- syntax:- 
+    var array1 = ['sss',"sfsf","sfj","34","true"] -->
+
+    <script>
+        var array1 = ["Raj","Bhargav","Nidhi","shana","kuldep",34,"56",90]
+        console.log(array1)
+        console.log(array1[0])
+        console.log(array1[4])
+        // document.write(array1)
+        // document.write(array1[0])
+        // for(i=0;i<=array1.length;i++)
+        // {
+        //     console.log(array1[i])
+        //     document.write("index:-",i,"=>",array1[i],"<br>")
+        // }
+
+        // console.log(array1)
+        // for(let data of array1)
+        // {
+        //     // value
+        //     console.log(data)
+        //     document.write(data,"<br>")
+        // }
+
+        for(let data1 in array1)
+        {
+            // index,value
+            console.log(data1) //index
+            console.log(array1[data1]) //value[index]
+            document.write("index:-",data1,"=>",array1[data1],"<br>")
+        }
+
+
+    </script>
+</body>
+</html>

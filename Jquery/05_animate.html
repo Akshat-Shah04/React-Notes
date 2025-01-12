@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .main{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            /* position: absolute; */
+        }
+        div{
+            background-color: lightcoral;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">start</button>
+    <div class="main"></div>
+    <div></div>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $(".main").animate({
+                    // right:"200px",
+                    opacity:"0.5",
+                    // width:"200px",
+                    height:"200px"
+                },1000);  
+                $(".main").animate({
+                    opacity:"1",
+                    width:"200px"
+                },1000);
+                $(".main").animate({
+                    opacity:"0.5",
+                    height:"100px"
+                },1000);
+                $(".main").animate({
+                    opacity:"1",
+                    width:"100px"
+                },1000);
+            });
+        });
+    </script>
+</body>
+</html>

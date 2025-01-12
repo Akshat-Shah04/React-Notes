@@ -1,0 +1,23 @@
+.border(@red:red;@color:blue){
+    border: 10px solid @red;
+    color: @color;
+
+}
+.padding(@paddin:30px){
+    padding: @paddin;
+}
+
+h1{
+    .border();
+}
+
+h2{
+    .border(blue,green);
+    .padding();
+}
+.main{
+    .padding(50px);
+    background-color: aqua;
+    width: 50%;
+
+}

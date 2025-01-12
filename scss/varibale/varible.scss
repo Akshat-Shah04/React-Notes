@@ -1,0 +1,27 @@
+$bg-color : red;
+$text-color : white;
+$font-size : 100px;
+$p-color : rgb(40, 165, 207);
+$famliy : cursive;
+
+
+h1{
+    background-color: $text-color;
+    color: $bg-color;
+}
+h2{
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: $famliy;
+    font-size: $font-size - 30px;
+}
+p{
+    color: $p-color;
+    font-size: $font-size - 50px;
+    font-family: $famliy;
+}
+div{
+    font-size: $font-size;
+    color: $p-color;
+    background-color: $bg-color;
+}

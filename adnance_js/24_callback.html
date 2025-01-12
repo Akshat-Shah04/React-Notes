@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // callback :- outer function and inner function (callback) :- 
+        // :- outer function call innner  call
+
+
+        setTimeout(()=>{
+            console.log("hello this settime")
+        },2000)
+
+
+        function output(res){
+            // outer function
+            console.log(res)
+        }
+
+        // callback
+        function sum(){
+            var a=20,b=10
+            var sum = a+ b
+            return sum
+        }
+        output(sum())
+
+     
+        // function summ(){
+
+        // }
+
+        // const add=()=>{
+
+        // }
+
+        // add()
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- inheritance :- one class to other class :- inheritance  -->
+     <!-- 1) single A - B
+     2) multiple not js()
+     3) multi level A - B - C
+     4) hychircaal  A - b  , A - c
+     5) hybrid A - b - C , A -  d -->
+
+
+     <!-- class A{
+        function()
+     }
+     class b extends A {
+        function()
+     } -->
+
+     <script>
+        // class A{
+        //     sum = function(a,b){
+        //         document.write("sum =>",a+b)
+        //     }
+        // }
+
+        // class B extends A{
+        //     sub(a,b){
+        //         document.write("sub=>",a-b)
+        //     }
+        // }
+
+        // var obj =new B;
+        // obj.sub(30,20);
+        // obj.sum(30,20)
+
+
+        // class A{
+        //     sum = function(a,b){
+        //         document.write("sum =>",a+b)
+        //     }
+        // }
+
+        // class B extends A{
+        //     sub(a,b){
+        //         document.write("sub=>",a-b)
+        //     }
+        // }
+
+        // class C extends B{
+        //     mul(a,b){
+        //         document.write("mul=>",a*b)
+        //     }
+        // }
+
+
+        // var obj = new C 
+        // obj.mul(10,10)
+        // obj.sub(20,10)
+        // obj.sum(40,30)
+
+
+
+        class  a{
+            x(){
+                document.write("This is prenet function","<br>")
+            }
+        }
+        class b extends a{
+            y(){
+                document.write("This is a child(1) function","<br>")
+            }
+        }
+
+        
+        class c extends a{
+            z(){
+                document.write("This is a child(2) function","<br>")
+            }
+        }
+
+
+        var obj = new b
+        obj.x()
+        obj.y()
+
+        var obj1 = new c
+        obj1.x()
+        obj1.z()
+
+     </script>
+</body>
+</html>

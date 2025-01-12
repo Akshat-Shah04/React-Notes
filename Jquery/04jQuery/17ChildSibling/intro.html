@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>jQuery Traversing Children</title>
+
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script>
+// $(document).ready(function(){
+//   //below code will run for all divs
+//   $("div").children("p").css("background-color","yellow");
+
+//    $("#spanParent").children("h4").css("background-color","green");
+// });
+</script>
+</head>
+<body>
+    <div class="Markdown_markdown__wHGCe"><p>jQuery provides a lot of tree traversal functions that we can use to get the parent, child, siblings, previous and next elements. We will look into each of jQuery tree traversal methods one by one - today we will look into two of the jQuery traversal methods i.e <code>parent()</code> and <code>children()</code>.</p>
+        <h2 id="jquery-parent-function"><a class="hash-anchor" href="#jquery-parent-function" aria-hidden="true"></a>jQuery parent() function</h2>
+        <p><strong>jQuery parent()</strong> method is used to get the direct parent element of the selected HTML element. You can perform desired actions on the parent element once it Is returned. This is the syntax for using jQuery parent():</p>
+        <ul>
+        <li><strong>$(&quot;<em>child&quot;</em>).parent()</strong></li>
+        </ul>
+        <p>This will return the direct parent of <strong><em>parent</em></strong> element</p>
+        <ul>
+        <li><strong>$(&quot;<em>child&quot;</em>).parent(“filter”)</strong></li>
+        </ul>
+<div style="border:1px solid;">
+<h3>h3 - Child of div</h3>
+<p> p -Child of div</p>
+<span> Span - Child of Div</span>
+<p>Second p - Child of div</p>
+</div>
+<p> p element - Not a child of div</p>
+
+<span id="spanParent">
+<h4>This is an h4 element (child of Span).</h4>
+</span>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            fullname : function person1(city,location){
+                return this.fname + " " + this.lname +" "+ city + " " + location
+            }
+        }
+
+
+        let person1 = {
+            fname:"kuldeep",
+            lname:"patel"
+        }
+
+        let peron2 = {
+            fname:"Raj",
+            lname:"soni"
+        }
+
+
+        // call function do method call sparete agru
+        console.log(person.fullname.call(person1,"surat","india"))
+
+        // apply array single argumment arr aray :- 
+        console.log(person.fullname.apply(peron2,["surat","india"]))
+
+    </script>
+</body>
+</html>

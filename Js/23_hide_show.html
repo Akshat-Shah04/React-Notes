@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .add{
+            width: 50%;
+            height: 100px;
+            background: linear-gradient(red,green);
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Heading1</h1>
+    <button onclick="hide1()">hide</button>
+    <button onclick="show1()">show</button>
+    <button onclick="Toggle1()">Toggle</button>
+
+    <script>
+        var h1_tag=document.getElementById("h1")
+        function hide1()
+        {
+            h1_tag.classList.remove("add")
+            console.log("hide called")
+        }
+
+        function show1()
+        {
+            h1_tag.classList.add("add")
+            console.log("show called")
+        }
+
+        function Toggle1()
+        {
+            h1_tag.classList.toggle("add")
+            console.log("toggle called")
+        }
+    </script>
+</body>
+</html>

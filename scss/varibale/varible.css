@@ -1,0 +1,23 @@
+h1 {
+  background-color: white;
+  color: red;
+}
+
+h2 {
+  background-color: red;
+  color: white;
+  font-family: cursive;
+  font-size: 70px;
+}
+
+p {
+  color: rgb(40, 165, 207);
+  font-size: 50px;
+  font-family: cursive;
+}
+
+div {
+  font-size: 100px;
+  color: rgb(40, 165, 207);
+  background-color: red;
+}/*# sourceMappingURL=varible.css.map */

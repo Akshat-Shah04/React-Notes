@@ -1,0 +1,22 @@
+.btn {
+  background-color: red;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.btn:hover {
+  background-color: lightgreen;
+}
+.btn2 {
+  background-color: lightgreen;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.btn2:hover {
+  background-color: red;
+}
+h1 {
+  background-color: aqua;
+  color: red;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="/img/n1.jpg" alt="" height="100%" width="100%" id="img">
+    </div>
+    <button onclick="clickme()">click</button>
+
+    <script>
+        var img1 = document.getElementById('img')
+        console.log(img1)
+        // console.log(img1.src)
+
+        function clickme()
+        {
+            if(img1.src.match("/img/n1.jpg"))
+            {
+                img1.src = "/img/n2.jpg"
+            }
+            else if(img1.src.match("/img/n2.jpg"))
+            {
+                img1.src = "/img/n3.jpg"
+            }
+            else if(img1.src.match("/img/n3.jpg"))
+            {
+                img1.src = "/img/n4.jpg"
+            }
+            else{
+                img1.src = "/img/n1.jpg"
+            }
+        }
+
+    </script>
+</body>
+</html>

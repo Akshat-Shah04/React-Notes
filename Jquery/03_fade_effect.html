@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        p{
+            background-color: lightcoral;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">fade out</button>
+    <button id="btn1">fade In</button>
+    <button id="btn3">Fdetoggle</button>
+    <button id="btn4">Fade_to</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus distinctio aspernatur temporibus veritatis beatae aut magnam architecto placeat rerum reprehenderit, maiores suscipit. Ratione quos fuga officiis quod perferendis rerum libero.</p>
+
+    <script>
+        $(document).ready(function(){
+          $("#btn").click(function(){
+            $("p").fadeOut("fast")
+            // console.log("button")
+          })
+          $("#btn1").click(function(){
+            $("p").fadeIn(1000)
+          })
+          $("#btn3").click(function(){
+            $("p").fadeToggle(1000)
+          })
+          $("#btn4").click(function(){
+            $("p").fadeTo("slow",0.8)
+          })
+        });
+    </script>
+</body>
+</html>

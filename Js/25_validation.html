@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+       <div>
+        <input type="text" placeholder="Enter name" id="nm">
+        <span id="nmerr"></span>
+       </div>
+       <div>
+        <input type="password" placeholder="enter password" id="pwd">
+        <span id="pwderr"></span>
+       </div>
+       <div>
+        <input type="password" placeholder="C password" id="cpwd">
+       </div>
+       <div>
+        <input type="text" placeholder="Enter your mobile" id="mb">
+        <span id="mberr"></span>
+       </div>
+       <input type="submit" onclick="return validation()">
+    </form>
+    
+    <script>
+        var name1 = document.getElementById("nm")
+        var nmerror = document.getElementById("nmerr")
+
+        var password1 = document.getElementById("pwd")
+        var pwderror = document.getElementById("pwderr")
+
+        var cpassword = document.getElementById("cpwd")
+   
+        var mobile = document.getElementById("mb")
+        var mberror = document.getElementById("mberr")
+
+        // console.log(mobile)
+        // console.log(mberror)
+
+        function validation()
+        {
+            if(name1.value == "" || name1.value == null)
+            {
+                nmerror.innerHTML = "..pls required name"
+                nmerror.style.color = "red"
+                return false
+            }
+            else{
+                nmerror.innerHTML = ""
+            }
+            if(password1.value == "" || name1.value == null)
+            {
+                pwderror.innerHTML = "..pls required password"
+                pwderror.style.color = "red"
+                return false
+            }
+            else{
+                pwderror.innerHTML = ""
+            }
+            if(password1.value != cpassword.value)
+            {
+                alert("Do not Match password...")
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>

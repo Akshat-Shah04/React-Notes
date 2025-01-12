@@ -1,0 +1,21 @@
+// .h-style(@font) when(@font >= 20px)
+// {
+//     color: red;
+//     font-size: @font;
+// }
+
+@color:green;
+
+.h-style(@font) when(@font <= 20px)
+{
+    color: blue;
+    font-size: @font;
+}
+
+h1{
+    .h-style(20px)
+}
+h2{
+    color: if((iscolor(@color)),@color,red);
+    font-size: if((2 < 1),40px,20px);
+}

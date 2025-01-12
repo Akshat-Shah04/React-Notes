@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function output(res){
+            console.log(res)
+        }
+
+        let abc = new Promise(function(success,faild){
+            
+            
+            if(!success){
+                success("This call success")
+            }
+            else{
+                faild("this call rejected")
+            }
+        })
+        console.log(abc)
+        // first then return
+        abc.then(
+            // success
+            function(value){output(value)},
+            function(value){output(value)}
+        )
+        
+
+        fetch().then().then()
+
+    </script>
+</body>
+</html>

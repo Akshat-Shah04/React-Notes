@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- po :- complie time(function loading) and run time(function overring) -->
+
+    <!-- function loading :- function name same but deffent para :- same class (same funcional) (not use) -->
+    <!-- function overriing :-  function name same but deffernt para :-  deff class (inheritance) -->
+
+
+
+    <script>
+        // function loading (not possible in js)
+        // class abc{
+        //     display = function(a){
+        //         console.log("hello this display",a)
+        //     }
+        //     display = function(a,b){
+        //         console.log("hello this display 2",a+b)
+        //     }
+        // }
+
+        // var obj = new abc 
+        // obj.display(12,20)
+
+
+        // function overring 
+        class a {
+            display = function(){
+                console.log("x function")
+            }
+        }
+        class b extends a{
+            display = function(){
+                console.log("y function")
+            }
+        }
+        class c extends b {
+            display = function(){
+                console.log("z function")
+            }
+        }
+        // var obj = new c;
+        // obj.display()
+
+        var arr = [new a(),new b(), new c()]
+        arr.forEach((data)=>{
+            console.log(data.display())
+        })
+
+    </script>
+</body>
+</html>

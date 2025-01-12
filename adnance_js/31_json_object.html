@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- json :- javascript object noation 
+        :- Easy understand 
+        :- lightwight way basy 
+        ;-no roww no col (json) -->
+    
+
+    <!-- sybntax :- 
+    let jsondata = [
+    {
+        "id":1,
+        "name":"raj",
+        "course":"Front"
+    }
+    ]
+
+    let object = [
+        {
+            id:1,
+            name:"raj",
+            course:"Front"
+        }
+    ] -->
+
+
+    <script>
+        let jsondata = `[
+            {
+                "id":1,
+                "name":"raj",
+                "course":"Front"
+            },
+            {
+                "id":2,
+                "name":"Kuldeep",
+                "course":"Front-end"
+            },
+            {
+                "id":3,
+                "name":"Bumika",
+                "course":"full-stack"
+            }
+        ]`
+
+        console.log(jsondata)
+
+        let obj = JSON.parse(jsondata)
+
+        console.log(obj)
+
+        for(let data of obj){
+            // console.log(data.id)
+            document.write(`<p>id :- ${data.id}  name :- ${data.name} course:- ${data.course} </p> `)
+        }
+        // document.write(jsondata)
+
+
+        let object1 = [
+            {
+                id:1,
+                name:"asdbhkj",
+                coruse:[
+                    "font","back","Fullstack"
+                ]
+            },
+            {
+                id:1,
+                name:"asdbhkj",
+                coruse:{
+                    first:"asfsa",
+                    second:"safsa",
+                    sadfsadf:"safdsa"
+                }
+            }
+
+        ]
+
+        console.log(object1)
+        let datajson = JSON.stringify(object1)
+        console.log(datajson)
+
+
+
+
+    </script>
+    
+</body>
+</html>

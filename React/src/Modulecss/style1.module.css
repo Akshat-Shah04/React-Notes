@@ -1,0 +1,5 @@
+.box{
+    background: linear-gradient(red,green);
+    padding: 30px;
+    font-size: 30px;
+}

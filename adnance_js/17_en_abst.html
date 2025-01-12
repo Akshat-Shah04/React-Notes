@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- enc :-  data hide :- private
+    abs :- hide user access  -->
+
+    <script>
+        function Person(name,age){
+
+            // private data (_priate)
+            let _name = name;
+            let _age = age;
+
+
+            // absr
+            this.getname = function()  {
+                return _name;
+            }
+
+            this.getage = function(){
+                return _age;
+            }
+
+            this.setage = function(newage){
+                if(newage > 18){
+                    _age = newage
+                }
+                else{
+                    console.log("not valid age")
+                }
+            }
+            
+        }
+        var ab = new Person("kuldeep",28)
+        console.log(ab._name)
+        console.log(ab.getname())
+        console.log(ab._age)
+        console.log(ab.getage())
+        console.log(ab.setage(10))
+        console.log(ab.getage())
+
+    </script>
+</body>
+</html>

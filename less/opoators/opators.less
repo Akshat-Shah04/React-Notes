@@ -1,0 +1,30 @@
+
+@font : 200px;
+
+.font(@size) when(@size <=40)
+{
+    font-size: @size;
+    color: green;
+}
+
+// .font(@size) when(@size >=20)
+// {
+//     font-size: @size;
+//     color: red;
+// }
+
+
+
+
+h1{
+    // artimetica +,-,*,/
+    // font-size: @font - 100px;
+    .font(30px)
+}
+
+p{
+    // font-size: @font / 2;
+    font-size: @font / 2; 
+    width: calc(50% + (@font - 10em));
+    background-color: red;
+}
